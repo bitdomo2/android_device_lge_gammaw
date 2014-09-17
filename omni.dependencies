@@ -1,0 +1,14 @@
+[
+  {
+    "remote":      "bitdomo2",
+    "repository":  "android_device_lge_gammaw",
+    "target_path": "device/lge/gammaw",
+    "revision":    "android-4.4"
+  },
+  {
+    "remote":      "bitdomo2",
+    "repository":  "android_device_lge_gammaw-kernel",
+    "target_path": "kernel/lge/gammaw",
+    "revision":    "android-4.4"
+  }
+]
