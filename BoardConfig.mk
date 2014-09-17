@@ -28,6 +28,10 @@ BOARD_KERNEL_PAGESIZE := 2048
 
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=w55n user_debug=31 msm_rtb.filter=0x37
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x01e00000
+TARGET_KERNEL_SOURCE := kernel/lge/gammaw
+TARGET_KERNEL_CONFIG := w55n_global_com_defconfig
+TARGET_KERNEL_APPEND_DTB := true
+BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 
 TARGET_NO_RADIOIMAGE := true
 TARGET_BOARD_PLATFORM := msm8610
@@ -48,8 +52,6 @@ TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_RECOVERY_UI_LIB := librecovery_ui_gammaw
 TARGET_RECOVERY_FSTAB = device/lge/gammaw/fstab.w55n
 
-PDK_PLATFORM_ZIP_PRODUCT_BINARIES := device/lge/hammerhead-kernel/vmlinux.bz2
-
 HAVE_ADRENO_SOURCE:= false
 
 # TWRP
@@ -63,3 +65,6 @@ TW_EXTERNAL_STORAGE_PATH := "/sdcard"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "sdcard"
 TW_NO_REBOOT_BOOTLOADER := true
 TW_NO_USB_STORAGE := true
+BOARD_HAS_FLIPPED_SCREEN := true
+TW_NO_SCREEN_TIMEOUT := true
+TW_HAS_MTP := false
