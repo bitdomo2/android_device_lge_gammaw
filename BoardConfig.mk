@@ -14,9 +14,9 @@
 # limitations under the License.
 #
 
+TARGET_BOARD_PLATFORM_GPU := qcom-adreno305
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
-TARGET_CPU_SMP := true
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := cortex-a7
@@ -30,9 +30,9 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 an
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01000000 --tags_offset 0x01e00000
 TARGET_KERNEL_SOURCE := kernel/lge/gammaw
 TARGET_KERNEL_CONFIG := w55n_global_com_defconfig
-TARGET_KERNEL_APPEND_DTB := true
-BOARD_KERNEL_IMAGE_NAME := zImage-dtb
-
+BOARD_KERNEL_SEPARATED_DT := true
+BOARD_CUSTOM_BOOTIMG_MK := device/lge/gammaw/mkbootimg.mk
+BOARD_KERNEL_OFFSET := 0x00008000
 TARGET_NO_RADIOIMAGE := true
 TARGET_BOARD_PLATFORM := msm8610
 
@@ -67,4 +67,4 @@ TW_NO_REBOOT_BOOTLOADER := true
 TW_NO_USB_STORAGE := true
 BOARD_HAS_FLIPPED_SCREEN := true
 TW_NO_SCREEN_TIMEOUT := true
-TW_HAS_MTP := false
+TW_HAS_MTP := true

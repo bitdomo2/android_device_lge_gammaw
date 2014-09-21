@@ -19,16 +19,6 @@
 #
 # Everything in this directory will become public
 
-
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/lge/gammaw-kernel/zImage
-else
-LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
-
-PRODUCT_COPY_FILES := \
-    $(LOCAL_KERNEL):kernel
-
 PRODUCT_COPY_FILES += \
     device/lge/gammaw/init.gammaw.rc:root/init.gammaw.rc \
     device/lge/gammaw/init.gammaw.usb.rc:root/init.gammaw.usb.rc \
