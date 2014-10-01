@@ -94,7 +94,6 @@ PRODUCT_COPY_FILES += \
 # Ramdisk
 PRODUCT_COPY_FILES += \
     device/lge/gammaw/rootdir/fstab.w55n:root/fstab.w55n \
-    device/lge/gammaw/rootdir/fstab_f2fs.w55n:root/fstab_f2fs.w55n \
     device/lge/gammaw/rootdir/init.class_main.sh:root/init.class_main.sh \
     device/lge/gammaw/rootdir/init.lge.early.rc:root/init.lge.early.rc \
     device/lge/gammaw/rootdir/init.lge.rc:root/init.lge.rc \
@@ -103,21 +102,18 @@ PRODUCT_COPY_FILES += \
     device/lge/gammaw/rootdir/init.w55n.rc:root/init.w55n.rc \
     device/lge/gammaw/rootdir/init.w55n.usb.rc:root/init.w55n.usb.rc \
     device/lge/gammaw/rootdir/init.w55n_product.rc:root/init.w55n_product.rc \
-    device/lge/gammaw/rootdir/init.gammaw.bt_vendor.rc:root/init.gammaw.bt_vendor.rc \
-    device/gammaw/rootdir/init.gammaw.class_core.sh:root/init.gammaw.class_core.sh \
-    device/gammaw/rootdir/init.gammaw.cmm.usb.sh:root/init.gammaw.cmm.usb.sh \
-    device/gammaw/rootdir/init.gammaw.early_boot.sh:root/init.gammaw.early_boot.sh \
-    device/gammaw/rootdir/init.gammaw.factory.sh:root/init.gammaw.factory.sh \
-    device/gammaw/rootdir/init.gammaw.rc:root/init.gammaw.rc \
-    device/gammaw/rootdir/init.gammaw.ril.sh:root/init.gammaw.ril.sh \
-    device/gammaw/rootdir/init.gammaw.sh:root/init.gammaw.sh \
-    device/gammaw/rootdir/init.gammaw.ssr.sh:root/init.gammaw.ssr.sh \
-    device/gammaw/rootdir/init.gammaw.syspart_fixup.sh:root/init.gammaw.syspart_fixup.sh \
-    device/gammaw/rootdir/init.gammaw.usb.rc:root/init.gammaw.usb.rc \
-    device/gammaw/rootdir/init.gammaw.usb.sh:root/init.gammaw.usb.sh \
-    device/gammaw/rootdir/ueventd.w55n.rc:root/ueventd.w55n.rc \
-    device/lge/gammaw/rootdir/sbin/bbx:root/sbin/bbx \
-    device/lge/gammaw/rootdir/fscheck.sh:root/fscheck.sh
+    device/lge/gammaw/rootdir/init.gammaw.class_core.sh:root/init.gammaw.class_core.sh \
+    device/lge/gammaw/rootdir/init.gammaw.cmm.usb.sh:root/init.gammaw.cmm.usb.sh \
+    device/lge/gammaw/rootdir/init.gammaw.early_boot.sh:root/init.gammaw.early_boot.sh \
+    device/lge/gammaw/rootdir/init.gammaw.factory.sh:root/init.gammaw.factory.sh \
+    device/lge/gammaw/rootdir/init.gammaw.rc:root/init.gammaw.rc \
+    device/lge/gammaw/rootdir/init.gammaw.ril.sh:root/init.gammaw.ril.sh \
+    device/lge/gammaw/rootdir/init.gammaw.sh:root/init.gammaw.sh \
+    device/lge/gammaw/rootdir/init.gammaw.ssr.sh:root/init.gammaw.ssr.sh \
+    device/lge/gammaw/rootdir/init.gammaw.syspart_fixup.sh:root/init.gammaw.syspart_fixup.sh \
+    device/lge/gammaw/rootdir/init.gammaw.usb.rc:root/init.gammaw.usb.rc \
+    device/lge/gammaw/rootdir/init.gammaw.usb.sh:root/init.gammaw.usb.sh \
+    device/lge/gammaw/rootdir/ueventd.w55n.rc:root/ueventd.w55n.rc 
 
 # TWRP
 PRODUCT_COPY_FILES += \

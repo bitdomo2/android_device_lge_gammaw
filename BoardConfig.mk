@@ -50,7 +50,7 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_RECOVERY_UI_LIB := librecovery_ui_gammaw
-TARGET_RECOVERY_FSTAB = device/lge/gammaw/fstab.w55n
+TARGET_RECOVERY_FSTAB = device/lge/gammaw/rootdir/fstab.w55n
 
 HAVE_ADRENO_SOURCE:= false
 
