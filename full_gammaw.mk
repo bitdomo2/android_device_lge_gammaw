@@ -27,5 +27,5 @@ PRODUCT_MODEL := AOSP on Gammaw
 PRODUCT_MANUFACTURER := LGE
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
-$(call inherit-product, device/lge/ga,,aw/device.mk)
+$(call inherit-product, device/lge/gammaw/device.mk)
 $(call inherit-product-if-exists, vendor/lge/gammaw/gammaw-vendor.mk)

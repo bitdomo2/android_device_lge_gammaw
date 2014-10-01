@@ -17,7 +17,7 @@
   },
   {
     "remote":      "github",
-    "repository":  "bitdomo2/android_device_lge_gammaw-kernel",
+    "repository":  "bitdomo2/android_kernel_lge_gammaw",
     "target_path": "kernel/lge/gammaw",
     "revision":    "android-4.4"
   }
