@@ -14,6 +14,18 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_gammaw.mk \
-    $(LOCAL_DIR)/full_gammaw.mk
+# Sample: This is where we'd set a backup provider if we had one
+# $(call inherit-product, device/sample/products/backup_overlay.mk)
+
+# Inherit from the common Open Source product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
+
+PRODUCT_NAME := full_gammaw
+PRODUCT_DEVICE := gammaw
+PRODUCT_BRAND := Android
+PRODUCT_MODEL := AOSP on Gammaw
+PRODUCT_MANUFACTURER := LGE
+PRODUCT_RESTRICT_VENDOR_FILES := false
+
+$(call inherit-product, device/lge/ga,,aw/device.mk)
+$(call inherit-product-if-exists, vendor/lge/gammaw/gammaw-vendor.mk)
