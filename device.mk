@@ -54,9 +54,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/lge/gammaw/prebuilt/etc/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
     device/lge/gammaw/prebuilt/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
-    kernel/lge/msm8610/drivers/staging/prima/firmware_bin/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
-    kernel/lge/msm8610/drivers/staging/prima/firmware_bin/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini \
-    kernel/lge/msm8610/drivers/staging/prima/firmware_bin/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
+    kernel/lge/gammaw/drivers/staging/prima/firmware_bin/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
+    kernel/lge/gammaw/drivers/staging/prima/firmware_bin/WCNSS_qcom_cfg.ini:system/etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini \
+    kernel/lge/gammaw/drivers/staging/prima/firmware_bin/WCNSS_qcom_cfg.ini:system/etc/wifi/WCNSS_qcom_cfg.ini \
     device/lge/gammaw/prebuilt/etc/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
     device/lge/gammaw/prebuilt/etc/wifi/WCNSS_qcom_wlan_nv.bin:system/etc/wifi/WCNSS_qcom_wlan_nv.bin \
     device/lge/gammaw/prebuilt/etc/hostapd/hostapd.accept:system/etc/hostapd/hostapd.accept \
@@ -67,10 +67,9 @@ PRODUCT_COPY_FILES += \
     device/lge/gammaw/prebuilt/etc/media_codecs.xml:system/etc/media_codecs.xml \
     device/lge/gammaw/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml \
     device/lge/gammaw/prebuilt/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
-    device/lge/gammaw/prebuilt/etc/thermal-engine-8226.conf:system/etc/thermal-engine-8226.conf \
+    device/lge/gammaw/prebuilt/etc/thermal-engine-8610.conf:system/etc/thermal-engine-8610.conf \
     device/lge/gammaw/prebuilt/usr/idc/touch_dev.idc:system/usr/idc/touch_dev.idc \
-    device/lge/gammaw/prebuilt/usr/keylayout/gpio-keys_d415.kl:system/usr/keylayout/gpio-keys_d415.kl \
-    device/lge/gammaw/prebuilt/usr/keylayout/gpio-keys_d410.kl:system/usr/keylayout/gpio-keys_d410.kl \
+    device/lge/gammaw/prebuilt/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
     device/lge/gammaw/prebuilt/etc/init.gammaw.fm.sh:system/etc/init.gammaw.fm.sh \
     device/lge/gammaw/prebuilt/etc/init.gammaw.ssr.wifi.sh:system/etc/init.gammaw.ssr.wifi.sh \
     device/lge/gammaw/prebuilt/etc/init.gammaw.wifi.sh:system/etc/init.gammaw.wifi.sh \
@@ -84,12 +83,8 @@ PRODUCT_COPY_FILES += \
     device/lge/gammaw/prebuilt/etc/izat.conf:system/etc/izat.conf \
     device/lge/gammaw/prebuilt/etc/boot_fixup:system/etc/boot_fixup \
     device/lge/gammaw/prebuilt/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
-    device/lge/gammaw/prebuilt/etc/nfc-nci.conf:system/etc/nfc-nci.conf \
     device/lge/gammaw/prebuilt/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
-    device/lge/gammaw/prebuilt/etc/nfcee_access.xml:system/etc/nfcee_access.xml \
-    device/lge/gammaw/prebuilt/etc/quipc.conf:system/etc/quipc.conf \
-    device/lge/gammaw/prebuilt/etc/init.d/10nfc_checker:system/etc/init.d/10nfc_checker \
-    device/lge/gammaw/prebuilt/etc/init.d/11keys_checker:system/etc/init.d/11keys_checker
+    device/lge/gammaw/prebuilt/etc/quipc.conf:system/etc/quipc.conf
 
 # Ramdisk
 PRODUCT_COPY_FILES += \
